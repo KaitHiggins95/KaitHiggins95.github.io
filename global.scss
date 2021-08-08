@@ -1,0 +1,93 @@
+// Tokens
+:root {
+  // (c)olor
+  --c-black: #05091e;
+  --c-blue: #46b4ff;
+  --c-gray: #90aab7;
+  --c-green: #9ef2cb;
+  --c-pink: #ffb8d9;
+  --c-orange: #ffb7a3;
+  --c-yellow: #ffdace;
+  --c-white: #fff;
+
+  // (t)heme
+  --t-fg: var(--c-black);
+  --t-bg: var(--c-white);
+  --t-subdue: var(--c-gray);
+  --t-active: var(--c-blue);
+}
+
+// Base
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Inter", "system-ui", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--t-active);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+
+// text align
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+
+// wrapper
+.wrapper {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.wrapper__readable {
+  max-width: 50em;
+}
+
+.cta-button {
+  background-color: var(--c-black);
+  color: var(--c-white);
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  line-height: 6rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.cta-button:hover {
+  background-color: var(--c-pink);
+  color: var(--c-black);
+}
